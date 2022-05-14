@@ -9,10 +9,13 @@ export const Header = () => {
 					<span>C</span>
 					D
 				</p>
+				<p>
+					Portfolio
+				</p>
 			</Link>
 			<nav>
 				<div className="hamburger-menu-container">
-					<img src="https://img.icons8.com/material-rounded/344/menu--v1.png" alt="hamburger-menu" />
+					<img src={require('../../img/menu.png')} alt="hamburger-menu" />
 				</div>
 			</nav>
 		</header>

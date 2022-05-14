@@ -1,17 +1,29 @@
 .presentation {
+	height: 100%;
+	padding: 0 12px;
+	margin-top: 32px;
 }
-.background-main {
-	position: absolute;
-	object-fit: cover;
-	width: 100%;
-    height: 100%;
+.presentation-header {
+	display: flex;
+	justify-content: center;
+}
+.presentation-header img { 
+	width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.presentation-about-me {
+	text-align: center;
+}
+.presentation-about-me p {
+	margin: 8px 0;
+	font-size: 40px;
 }
 .presentation-info {
-	padding: 0 12px;
-	position: absolute;
-	bottom: 40px;
+	height: 100%;
 }
 .presentation-title {
-    font-size: 70px;
-    margin: 0;
+	margin: 0;
+    font-size: 60px;
 }
