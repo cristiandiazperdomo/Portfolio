@@ -18,6 +18,12 @@
 	height: 70px;
 	padding: 10px 12px;
 }
+.Header nav {
+	display: flex;
+    max-width: 50px;
+    min-width: 50px;
+    justify-content: flex-end;
+}
 .Header a {
 	display: flex;
 	align-items: center;
@@ -28,6 +34,9 @@
 	margin: 0 auto;
 }
 .Header-title {
+    max-width: 50px;
+    min-width: 50px;
+
 	font-weight: 700;
 	color: var(--black);
 	font-size: 32px;
@@ -42,4 +51,6 @@
 }
 .hamburger-menu-container img {
 	width: 28px;
+	max-height: 30px;
+	min-height: 30px;
 }
