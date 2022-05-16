@@ -1,0 +1,71 @@
+:root {
+	--sm: 12px;
+	--md: 16px;
+	--lg: 20px;
+
+	--dark-teal: #019267;
+	--light-teal:#00C897;
+	--dark-yellow: #FFD365;
+	--light-yellow: #FDFFA9;
+	--black: #000000;
+	--white: #F5F5F5;
+}
+.card-container {
+	display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    align-content: space-evenly;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+}
+.card {
+	box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.45);
+    flex-direction: column;
+}
+.card-header {
+
+}
+.card-header-img {
+	width: 100%;
+	object-fit: cover;
+}
+.card-content {
+	text-align: center;
+}
+.card-content h4 {
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0;
+	margin: 12px 0;
+}
+.card-footer {
+
+}
+.card-footer p {
+	font-size: 14px;
+	margin: 0;
+	margin-bottom: 12px;
+}
+.github-repository{
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+    width: 300px;
+    color: var(--black);
+}
+.github-repository:hover{
+	backdrop-filter: blur(5px);
+}
+.github-link {
+	display: none;
+	position: absolute;
+	height: 300px;
+    width: 300px;
+}

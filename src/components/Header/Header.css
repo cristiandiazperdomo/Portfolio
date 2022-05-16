@@ -16,7 +16,7 @@
 	align-items: center;
 	justify-content: space-between;
 	height: 70px;
-	padding: 10px 12px;
+	padding: 0 12px;
 }
 .Header nav {
 	display: flex;

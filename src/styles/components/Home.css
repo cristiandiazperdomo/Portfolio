@@ -1,7 +1,22 @@
+:root {
+	--sm: 12px;
+	--md: 16px;
+	--lg: 20px;
+
+	--dark-teal: #019267;
+	--light-teal:#00C897;
+	--dark-yellow: #FFD365;
+	--light-yellow: #FDFFA9;
+	--black: #000000;
+	--white: #F5F5F5;
+}
+
 .presentation {
 	height: 100%;
-	padding: 0 12px;
-	margin-top: 32px;
+}
+.presentation-info {
+	padding: 32px 32px;
+	height: 100vh;
 }
 .presentation-header {
 	display: flex;
@@ -16,14 +31,77 @@
 .presentation-about-me {
 	text-align: center;
 }
-.presentation-about-me p {
+.presentation-about-me .hello {
 	margin: 8px 0;
+	font-weight: 300;
 	font-size: 40px;
-}
-.presentation-info {
-	height: 100%;
 }
 .presentation-title {
 	margin: 0;
     font-size: 60px;
+}
+.presentation-arrow {
+	display: block;
+	transform: rotate(90deg);
+	margin: 0 auto;
+	height: 40px;
+}
+.rol {
+	margin: 8px 0 16px 0;
+	font-weight: 500;
+    font-size: 20px;
+}
+.whoiam {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+	height: 100vh;
+	padding: 32px 32px;
+}
+.header-whoiam {
+	font-size: 32px;
+	text-align: center;
+}
+.header-whoiam .header-whoiam-img {
+	display: block;
+	margin: 0 auto;
+
+	width: 60px;
+}
+.article-whoiam {
+	margin-top: -40px;
+}
+.whoiam .whoiam-studies {
+	line-height: 1.5;
+	font-size: 14px;
+}
+.whoiam footer {
+	display: flex;
+    justify-content: center;
+}
+.dowload-cv {
+	display: flex;
+    box-sizing: border-box;
+    width: 208px;
+    color: var(--black);
+    background-color: var(--light-teal);
+    border: 1px solid var(--dark-teal);
+    text-decoration: none;
+    padding: 8px;
+}
+.icon-dowload {
+	width: 20px;
+	margin: 0 8px;
+}
+
+/*PROJECTS SECTION*/
+
+.projects {
+	height: 100vh;
+    padding: 32px 32px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    align-content: space-evenly;
 }
