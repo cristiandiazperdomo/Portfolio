@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card.css';
 
-export const Card = ({ project, url, toWit, gitHub, iden }) => {
+export const Card = ({ url, toWit, gitHub, iden }) => {
 
 	const goToGitHub = iden => {
 		const linkToGitHub = document.querySelectorAll('.github-link');
@@ -20,13 +20,8 @@ export const Card = ({ project, url, toWit, gitHub, iden }) => {
 		<div className="card-container">
 			<div className="card" onMouseOver={() => goToGitHub(iden)} onMouseOut={() => goToGitHub(iden)}>
 				<header className="card-header">
-					<img src={url} alt={project} className="card-header-img"/>
+					<img src={url} className="card-header-img"/>
 				</header>	
-				<article className="card-content">
-					<h4>{project}</h4>
-				</article>
-				<article>
-				</article>
 				<footer className="card-footer">
 					<p>{toWit}</p>
 				</footer>	

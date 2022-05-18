@@ -3,6 +3,18 @@ import { Card } from '../components/Card/Card';
 import '../styles/components/Home.css';
 
 export const Home = () => {
+	const projectsCards = [{
+		url: require('../img/weather.png'),
+		toWit: 'Conoce el clima que habra en horas o dias',
+		gitHub: "https://github.com/cristiandiazperdomo/Weather-App/tree/main/src/components",
+		iden: 0,
+	}, {
+		url: require('../img/weather.png'),
+		toWit: 'Conoce el clima que habra en horas o dias',
+		gitHub: "https://github.com/cristiandiazperdomo/Weather-App/tree/main/src/components",
+		iden: 1,
+	}];
+
 	return (
 		<>
 			<section className="presentation">
@@ -42,21 +54,19 @@ export const Home = () => {
 					</footer>
 				</div>
 			</section>
-			<section className="projects">
-				<Card 
-					project={"WeatherApp"} 
-					url={require('../img/weather.png')} 
-					toWit="Conoce el clima que habra en horas o dias"
-					gitHub="https://github.com/cristiandiazperdomo/Weather-App/tree/main/src/components" 
-					iden={0}
-				/>
-				<Card 
-					project={"WeatherApp"} 
-					url={require('../img/weather.png')} 
-					toWit="Conoce el clima que habra en horas o dias" 
-					gitHub="https://github.com/cristiandiazperdomo/Weather-App/tree/main/src/components" 
-					iden={1}
-				/>
+			<section>
+				<h2 className="projects-title">My Portfolio</h2>
+				<p className="projects-description">A small selection of projects</p>
+				<div className="projects">
+					{projectsCards.map(project => 
+						<Card 
+							url={project.url} 
+							toWit={project.toWit}
+							gitHub={project.gitHub} 
+							iden={project.iden}
+						/>)
+					}
+				</div>
 			</section>
 		</>
 	)

@@ -11,21 +11,20 @@
 	--white: #F5F5F5;
 }
 .card-container {
-	display: grid;
+ 	display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     align-items: center;
     align-content: space-evenly;
     box-sizing: border-box;
     width: 300px;
-    height: 300px;
+    height: 200px;
 }
 .card {
 	box-sizing: border-box;
     width: 300px;
-    height: 300px;
+    height: 200px;
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.45);
-    flex-direction: column;
 }
 .card-header {
 
@@ -56,7 +55,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 300px;
+	height: 200px;
     width: 300px;
     color: var(--black);
 }
@@ -66,6 +65,6 @@
 .github-link {
 	display: none;
 	position: absolute;
-	height: 300px;
     width: 300px;
+	height: 200px;
 }
