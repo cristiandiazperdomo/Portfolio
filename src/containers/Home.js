@@ -6,13 +6,28 @@ export const Home = () => {
 	const projectsCards = [{
 		url: require('../img/weather.png'),
 		toWit: 'Conoce el clima que habra en horas o dias',
-		gitHub: "https://github.com/cristiandiazperdomo/Weather-App/tree/main/src/components",
+		gitHub: "https://github.com/cristiandiazperdomo/Weather-App",
 		iden: 0,
 	}, {
-		url: require('../img/weather.png'),
-		toWit: 'Conoce el clima que habra en horas o dias',
-		gitHub: "https://github.com/cristiandiazperdomo/Weather-App/tree/main/src/components",
+		url: require('../img/e-commerce.png'),
+		toWit: 'Tu e-commerce favorito',
+		gitHub: "https://github.com/cristiandiazperdomo/E-commerce",
 		iden: 1,
+	}, {
+		url: require('../img/game.jpg'),
+		toWit: 'Vuelve a jugar el clásico juego de Piedras, papel y tijeras',
+		gitHub: "https://github.com/cristiandiazperdomo/Rock-Paper-and-Scissors",
+		iden: 2,
+	}, {
+		url: require('../img/contact.jpg'),
+		toWit: 'No pierdas tus contactos',
+		gitHub: "https://github.com/cristiandiazperdomo/Contact-List",
+		iden: 3,
+	}, {
+		url: require('../img/contablito.jpg'),
+		toWit: 'Maneja las finanzas de tu negocio',
+		gitHub: "https://github.com/cristiandiazperdomo/Contablito",
+		iden: 4,
 	}];
 
 	return (
@@ -64,6 +79,7 @@ export const Home = () => {
 							toWit={project.toWit}
 							gitHub={project.gitHub} 
 							iden={project.iden}
+							key={project.iden}
 						/>)
 					}
 				</div>

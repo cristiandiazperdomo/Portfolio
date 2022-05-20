@@ -10,8 +10,8 @@
 	--black: #000000;
 	--white: #F5F5F5;
 }
-
 .presentation {
+	margin: 0 auto;
 	height: 100%;
 }
 .presentation-info {
