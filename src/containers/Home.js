@@ -43,7 +43,7 @@ export const Home = () => {
 						<p className="rol">Front-End Developer</p>
 					</article>
 					<footer>	
-						<img src={require('../img/flecha.png')} alt="arrow"  className="presentation-arrow"/>
+						<img src={require('../img/flecha-animated.gif')} alt="arrow"  className="presentation-arrow"/>
 					</footer>
 				</div>
 				<div className="whoiam">
@@ -61,15 +61,18 @@ export const Home = () => {
 							Although I am focused on Front-End, I created some small Back-ends to diferent projects.
 						</p>
 					</article>
-					<footer>
+					<article>
 						<Link to={require('../img/cv.pdf')} target="_blank" rel='noopener noreferrer' className="dowload-cv" download>
 							<img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="dowload" className="icon-dowload"/>
 							Download Resume
 						</Link>
+					</article>
+					<footer>
+						<img src={require('../img/flecha-animated.gif')} alt="arrow"  className="presentation-arrow"/>
 					</footer>
 				</div>
 			</section>
-			<section>
+			<section className="section-projects">
 				<h2 className="projects-title">My Portfolio</h2>
 				<p className="projects-description">A small selection of projects</p>
 				<div className="projects">

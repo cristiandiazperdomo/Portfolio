@@ -15,6 +15,9 @@
 	height: 100%;
 }
 .presentation-info {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 	padding: 32px 32px;
 	height: 100vh;
 }
@@ -42,9 +45,8 @@
 }
 .presentation-arrow {
 	display: block;
-	transform: rotate(90deg);
 	margin: 0 auto;
-	height: 40px;
+	height: 80px;
 }
 .rol {
 	margin: 8px 0 16px 0;
@@ -54,13 +56,16 @@
 .whoiam {
 	display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-	height: 100vh;
-	padding: 32px 32px;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 32px;
 }
 .header-whoiam {
 	font-size: 32px;
 	text-align: center;
+}
+.header-whoiam h2 {
+	margin-top: 0;
 }
 .header-whoiam .header-whoiam-img {
 	display: block;
@@ -87,6 +92,7 @@
     background-color: var(--light-teal);
     border: 1px solid var(--dark-teal);
     text-decoration: none;
+    margin: 0 auto;
     padding: 8px;
 }
 .icon-dowload {
@@ -95,9 +101,11 @@
 }
 
 /*PROJECTS SECTION*/
-
+.section-projects {
+	padding: 32px 32px;
+}
 .projects {
-    padding: 32px 32px;
+    padding: 32px 0;
     grid-gap: 40px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -106,6 +114,7 @@
     align-content: space-evenly;
 }
 .projects-title {
+	margin-top: 0;
 	font-weight: 700;
 	font-size: 40px;
     text-align: center;
