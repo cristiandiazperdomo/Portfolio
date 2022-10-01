@@ -35,7 +35,7 @@ export const Home = () => {
 			<section className="presentation">
 				<div className="presentation-info">
 					<header className="presentation-header">
-						<img src={require('../img/profile.jpg')} alt="mi photo" />
+						<img src={require('../img/profile.jpg')} alt="mainprofile"/>
 					</header>
 					<article className="presentation-about-me">
 						<p className="hello">Hola, soy</p>
@@ -63,7 +63,7 @@ export const Home = () => {
 					</article>
 					<article>
 						<Link to={require('../img/cv.pdf')} target="_blank" rel='noopener noreferrer' className="dowload-cv" download>
-							<img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="dowload" className="icon-dowload"/>
+							<img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="dowload-img" className="icon-dowload"/>
 							Download Resume
 						</Link>
 					</article>

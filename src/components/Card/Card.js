@@ -20,7 +20,7 @@ export const Card = ({ url, toWit, gitHub, iden }) => {
 		<div className="card-container">
 			<div className="card" onMouseOver={() => goToGitHub(iden)} onMouseOut={() => goToGitHub(iden)}>
 				<header className="card-header">
-					<img src={url} className="card-header-img"/>
+					<img src={url} className="card-header-img" alt="card"/>
 				</header>	
 				<footer className="card-footer">
 					<p>{toWit}</p>
