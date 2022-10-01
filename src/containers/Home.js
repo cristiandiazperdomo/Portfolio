@@ -47,29 +47,32 @@ export const Home = () => {
 					</footer>
 				</div>
 				<div className="whoiam">
-					<header className="header-whoiam">
-						<h2>Me, Myself and I</h2>
-					</header>
-					<article className="article-whoiam">
-						<p className="whoiam-studies">
-							I have knowledge in HTML, CSS and JS.
-							I am improving my Front-End skills, building Projects with React and learning English to go to level B2.
-							I like to play the guitar, exercise and read books.
-						</p>
-						<p className="whoiam-studies">
-							My purposes this year are to learn more about the backend and the database. 
-							Although I am focused on Front-End, I created some small Back-ends to diferent projects.
-						</p>
-					</article>
-					<article>
-						<Link to={require('../img/cv.pdf')} target="_blank" rel='noopener noreferrer' className="dowload-cv" download>
-							<img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="dowload-img" className="icon-dowload"/>
-							Download Resume
-						</Link>
-					</article>
-					<footer>
-						<img src={require('../img/flecha-animated.gif')} alt="arrow"  className="presentation-arrow"/>
-					</footer>
+					<div className="whoiam-two">
+						<article className="article-whoiam">
+							<header className="header-whoiam">
+								<h2>Me, Myself and I</h2>
+							</header>
+								<p className="whoiam-studies">
+									I have knowledge in HTML, CSS and JS.
+									I am improving my Front-End skills, building Projects with React and learning English to go to level B2.
+									I like to play the guitar, exercise and read books.
+								</p>
+								<p className="whoiam-studies">
+									My purposes this year are to learn more about the backend and the database. 
+									Although I am focused on Front-End, I created some small Back-ends to diferent projects.
+								</p>
+								<article>
+									<Link to={require('../img/cv.pdf')} target="_blank" rel='noopener noreferrer' className="dowload-cv" download>
+										<img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="dowload-img" className="icon-dowload"/>
+										Download Resume
+									</Link>
+								</article>
+							</article>
+						<div className="technologies">
+							<img src={require('../img/all.png')} alt="html, css and js" />
+							<img src={require('../img/flecha-animated.gif')} alt="arrow"  className="presentation-arrow"/>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section className="section-projects">

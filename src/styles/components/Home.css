@@ -10,6 +10,9 @@
 	--black: #000000;
 	--white: #F5F5F5;
 }
+.space-between-divs {
+	padding: 2rem 0;
+}
 .presentation {
 	margin: 0 auto;
 	height: 100%;
@@ -57,12 +60,15 @@
 	display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
     padding: 0 32px;
 }
 .header-whoiam {
 	font-size: 32px;
 	text-align: center;
+}
+.whoiam-two {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .header-whoiam h2 {
 	margin-top: 0;
@@ -74,7 +80,10 @@
 	width: 60px;
 }
 .article-whoiam {
-	margin-top: -40px;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 .whoiam .whoiam-studies {
 	line-height: 1.5;
@@ -99,16 +108,25 @@
 	width: 20px;
 	margin: 0 8px;
 }
-
+.technologies {
+	height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.technologies img:nth-child(1) {
+	width: 200px;
+}
 /*PROJECTS SECTION*/
 .section-projects {
-	padding: 32px 32px;
+	padding: 32px 0;
 }
 .projects {
     padding: 32px 0;
-    grid-gap: 40px;
+    grid-gap: 20px;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
     align-content: space-evenly;
@@ -121,4 +139,21 @@
 }
 .projects-description {
     text-align: center;
+}
+@media all and (max-width: 1024px) {
+	.projects {
+    	display: grid;
+    	grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media all and (max-width: 768px) {
+	.whoiam-two {
+		display: grid;
+	    grid-template-columns: repeat(1, 1fr);
+	}
+	.projects {
+    	display: grid;
+    	grid-template-columns: repeat(1, 1fr);
+	}
+
 }
