@@ -38,7 +38,7 @@ export const Home = () => {
 						<img src={require('../img/profile.jpg')} alt="mainprofile"/>
 					</header>
 					<article className="presentation-about-me">
-						<p className="hello">Hola, soy</p>
+						<p className="hello">Hi, i'm</p>
 						<h1 className="presentation-title">Cristian Díaz</h1>
 						<p className="rol">Front-End Developer</p>
 					</article>
