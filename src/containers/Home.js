@@ -5,27 +5,27 @@ import '../styles/components/Home.css';
 export const Home = () => {
 	const projectsCards = [{
 		url: require('../img/weather.png'),
-		toWit: 'Conoce el clima que habra en horas o dias',
+		toWit: 'Know the weather that speaks in hours or days',
 		gitHub: "https://github.com/cristiandiazperdomo/Weather-App",
 		iden: 0,
 	}, {
 		url: require('../img/e-commerce.png'),
-		toWit: 'Tu e-commerce favorito',
+		toWit: 'Your favourite e-commerce',
 		gitHub: "https://github.com/cristiandiazperdomo/E-commerce",
 		iden: 1,
 	}, {
 		url: require('../img/game.jpg'),
-		toWit: 'Vuelve a jugar el clásico juego de Piedras, papel y tijeras',
+		toWit: 'Replay the classic game of Rocks, paper and scissors',
 		gitHub: "https://github.com/cristiandiazperdomo/Rock-Paper-and-Scissors",
 		iden: 2,
 	}, {
 		url: require('../img/contact.jpg'),
-		toWit: 'No pierdas tus contactos',
+		toWit: "Don't lose your contacts",
 		gitHub: "https://github.com/cristiandiazperdomo/Contact-List",
 		iden: 3,
 	}, {
 		url: require('../img/contablito.jpg'),
-		toWit: 'Maneja las finanzas de tu negocio',
+		toWit: 'Manage your business finances',
 		gitHub: "https://github.com/cristiandiazperdomo/Contablito",
 		iden: 4,
 	}];
@@ -68,9 +68,19 @@ export const Home = () => {
 									</Link>
 								</article>
 							</article>
-						<div className="technologies">
-							<img src={require('../img/all.png')} alt="html, css and js" />
-							<img src={require('../img/flecha-animated.gif')} alt="arrow"  className="presentation-arrow"/>
+						<div className="technologies-container">
+							<div className="technologies">
+								<img src={require('../img/javascript.png')} alt="html, css and js"/>
+								<img src={require('../img/css.png')} alt="html, css and js"/>
+								<img src={require('../img/html.png')} alt="html, css and js"/>
+								<img src={require('../img/bootstrap.png')} alt="html, css and js"/>
+								<img src={require('../img/react.png')} alt="html, css and js"/>
+								<img src={require('../img/git.png')} alt="html, css and js"/>
+								<img src={require('../img/github.png')} alt="html, css and js"/>
+							</div>
+							<div className="whoiam-arrow-container">
+								<img src={require('../img/flecha-animated.gif')} alt="arrow" className="presentation-arrow"/>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -47,9 +47,10 @@
     font-size: 60px;
 }
 .presentation-arrow {
-	display: block;
-	margin: 0 auto;
-	height: 80px;
+	display: flex;
+    margin: 0 auto;
+    height: 80px;
+    justify-content: flex-start;
 }
 .rol {
 	margin: 8px 0 16px 0;
@@ -82,7 +83,7 @@
 .article-whoiam {
 	display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     height: 100vh;
 }
 .whoiam .whoiam-studies {
@@ -102,21 +103,35 @@
     border: 1px solid var(--dark-teal);
     text-decoration: none;
     margin: 0 auto;
+    margin-top: 40px;
     padding: 8px;
 }
 .icon-dowload {
 	width: 20px;
 	margin: 0 8px;
 }
-.technologies {
-	height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.technologies-container {
+	display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 0 0 0;
 }
-.technologies img:nth-child(1) {
-	width: 200px;
+.technologies {
+	display: grid;
+    margin: 0 auto;
+    width: 100%;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: flex-start;
+    align-items: center;
+    justify-items: center;
+}
+.technologies img {
+	width: 100px;
+    height: 100px;
+}
+.whoiam-arrow-container {
+
 }
 /*PROJECTS SECTION*/
 .section-projects {
