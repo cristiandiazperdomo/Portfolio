@@ -42,9 +42,6 @@ export const Home = () => {
 						<h1 className="presentation-title">Cristian Díaz</h1>
 						<p className="rol">Front-End Developer</p>
 					</article>
-					<footer>	
-						<img src={require('../img/flecha-animated.gif')} alt="arrow"  className="presentation-arrow"/>
-					</footer>
 				</div>
 				<div className="whoiam">
 					<div className="whoiam-two">
@@ -77,9 +74,6 @@ export const Home = () => {
 								<img src={require('../img/react.png')} alt="html, css and js"/>
 								<img src={require('../img/git.png')} alt="html, css and js"/>
 								<img src={require('../img/github.png')} alt="html, css and js"/>
-							</div>
-							<div className="whoiam-arrow-container">
-								<img src={require('../img/flecha-animated.gif')} alt="arrow" className="presentation-arrow"/>
 							</div>
 						</div>
 					</div>
