@@ -130,6 +130,13 @@
 	width: 100px;
     height: 100px;
 }
+.technologies img:nth-child(5) {
+	width: 110px;
+}
+.technologies img:nth-child(7) {
+	width: 150px;
+    height: 150px;
+}
 .whoiam-arrow-container {
 
 }
