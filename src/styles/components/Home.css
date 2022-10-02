@@ -20,9 +20,9 @@
 .presentation-info {
 	display: flex;
     flex-direction: column;
-    justify-content: space-between;
-	padding: 32px 32px;
-	height: 100vh;
+    justify-content: center;
+    padding: 32px 32px;
+    height: 100vh;
 }
 .presentation-header {
 	display: flex;
@@ -35,6 +35,7 @@
     border-radius: 50%;
 }
 .presentation-about-me {
+	margin-bottom: 200px;
 	text-align: center;
 }
 .presentation-about-me .hello {
@@ -113,8 +114,9 @@
 .technologies-container {
 	display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     padding: 32px 0 0 0;
+    height: 100vh;
 }
 .technologies {
 	display: grid;
