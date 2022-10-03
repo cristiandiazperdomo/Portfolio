@@ -28,7 +28,7 @@
 .presentation-info {
 	display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 100vh;
 }
 .presentation-header {
@@ -68,7 +68,6 @@
 	display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 32px;
 }
 .header-whoiam {
 	font-size: 32px;
