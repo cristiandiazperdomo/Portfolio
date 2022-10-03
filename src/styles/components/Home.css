@@ -185,5 +185,10 @@
     	display: grid;
     	grid-template-columns: repeat(1, 1fr);
 	}
+}
+@media all and (max-width: 340px) {
+	#root {
+		width: 95%;
+	}
 
 }
